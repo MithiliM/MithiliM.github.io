@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mithilie Mayekarr | AI Business Analyst Portfolio</title>
+
+<style>
+
+body {
+font-family: Arial, sans-serif;
+background: #0d1117;
+color: white;
+margin:0;
+padding:0;
+}
+
+.container {
+max-width: 1000px;
+margin: auto;
+padding:40px;
+}
+
+h1 {
+color:#C9A84C;
+}
+
+.card {
+background:#161b22;
+padding:25px;
+border-radius:10px;
+margin-bottom:30px;
+}
+
+textarea {
+width:100%;
+padding:12px;
+border-radius:6px;
+border:1px solid #30363d;
+background:#0d1117;
+color:white;
+margin-top:10px;
+}
+
+button {
+margin-top:15px;
+padding:12px 20px;
+border:none;
+border-radius:6px;
+background:#0E7C86;
+color:white;
+cursor:pointer;
+font-weight:bold;
+}
+
+.output {
+margin-top:20px;
+padding:15px;
+background:#0d1117;
+border-radius:6px;
+white-space:pre-wrap;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Mithilie Mayekarr</h1>
+
+<p>
+AI‑Augmented Business Analyst | Banking | Payments | Lending | Digital Transformation
+</p>
+
+
+<div class="card">
+
+<h2>🤖 AI Tool — User Story Enhancer</h2>
+
+<p>Paste rough requirement and convert to polished Agile story</p>
+
+<textarea id="storyInput" rows="5" placeholder="Example: Customer should be able to track loan status"></textarea>
+
+<button onclick="enhanceStory()">Generate User Story</button>
+
+<div id="storyOutput" class="output"></div>
+
+</div>
+
+
+<div class="card">
+
+<h2>🎯 AI Tool — JD Match Analyzer</h2>
+
+<p>Paste Job Description to see match score</p>
+
+<textarea id="jdInput" rows="5" placeholder="Paste job description here"></textarea>
+
+<button onclick="analyseJD()">Analyse Match</button>
+
+<div id="jdOutput" class="output"></div>
+
+</div>
+
+
+<div class="card">
+
+<h2>📊 Case Study — Digital Lending</h2>
+
+<p>
+Improved loan processing time by analysing workflows, defining BRD, and coordinating UAT.
+
+Key Skills:
+
+• Requirements Gathering  
+• Stakeholder Management  
+• UAT Coordination  
+• Banking Domain  
+
+</p>
+
+</div>
+
+
+<div class="card">
+
+<h2>📊 Case Study — Payments Transformation</h2>
+
+<p>
+Worked on payment modernization and process improvements.
+
+Key Skills:
+
+• Payments  
+• Process Mapping  
+• Agile Delivery  
+• Business Analysis  
+
+</p>
+
+</div>
+
+
+<div class="card">
+
+<h2>📄 Resume</h2>
+
+<p>Add your resume PDF here later</p>
+
+</div>
+
+
+</div>
+
+<script>
+
+function enhanceStory(){
+
+let input = document.getElementById("storyInput").value
+
+let output = `USER STORY
+
+As a banking user,
+I want ${input}
+So that I can complete my task efficiently
+
+ACCEPTANCE CRITERIA
+
+1. User accesses feature
+2. System validates data
+3. System processes request
+4. Confirmation displayed
+5. Audit trail created
+
+EDGE CASES
+
+• Network failure
+• Invalid data
+• Timeout scenario
+
+DEFINITION OF DONE
+
+• Requirements approved
+• UAT completed
+• Production ready
+`
+
+
+document.getElementById("storyOutput").innerText = output
+
+}
+
+
+function analyseJD(){
+
+let input = document.getElementById("jdInput").value.toLowerCase()
+
+let score = 60
+
+if(input.includes("bank")) score+=10
+if(input.includes("payments")) score+=10
+if(input.includes("agile")) score+=5
+if(input.includes("uat")) score+=5
+if(input.includes("business analyst")) score+=10
+
+let output = `MATCH SCORE: ${score}%
+
+STRENGTHS
+
+✔ Banking Experience
+✔ Business Analysis
+✔ Agile Delivery
+✔ Stakeholder Management
+
+GAPS
+
+• AI Experience
+• Global exposure
+
+RECOMMENDATION
+
+Strong Apply
+`
+
+
+document.getElementById("jdOutput").innerText = output
+
+}
+
+</script>
+
+
+</body>
+
+</html>
