@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mithilie Mayekarr | AI Banking Business Analyst</title>
+<style>
+body {font-family: Arial, sans-serif;background:#0d1117;color:white;margin:0}
+.container{max-width:1100px;margin:auto;padding:40px}
+.hero{padding:40px 0;border-bottom:1px solid #30363d;margin-bottom:40px}
+h1{color:#C9A84C}
+.card{background:#161b22;padding:25px;border-radius:10px;margin-bottom:20px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px}
+textarea{width:100%;padding:10px;background:#0d1117;color:white;border:1px solid #30363d}
+button{margin-top:10px;padding:10px;background:#0E7C86;color:white;border:none;border-radius:5px}
+.output{margin-top:10px;padding:10px;background:#0d1117}
+</style>
+</head>
+<body>
+
+<div class="container">
+
+<div class="hero">
+<h1>Mithilie Mayekarr</h1>
+<p>Banking Business Analyst | Payments | Lending</p>
+</div>
+
+<h2>Domain Expertise</h2>
+
+<div class="grid">
+<div class="card">Payments & Collections</div>
+<div class="card">Lending Products</div>
+<div class="card">Cash Management</div>
+<div class="card">Business Analysis</div>
+</div>
+
+<h2>AI Tools</h2>
+
+<div class="card">
+<textarea id="story"></textarea>
+<button onclick="gen()">Generate Story</button>
+<div id="out" class="output"></div>
+</div>
+
+</div>
+
+<script>
+function gen(){
+let input=document.getElementById("story").value
+document.getElementById("out").innerText="User Story: "+input
+}
+</script>
+
+</body>
+</html>
